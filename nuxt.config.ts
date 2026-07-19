@@ -69,8 +69,12 @@ export default defineNuxtConfig({
       // public variables
     },
     databaseUrl: process.env.DATABASE_URL,
-    jwtSecret: process.env.JWT_SECRET,
-    PORT: process.env.PORT,
+    jwtSecret: process.env.JWT_SECRET
+  },
+
+  devServer: {
+    port: process.env.PORT || 8080,
+    host: '0.0.0.0'
   },
 
   features: {

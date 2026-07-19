@@ -90,6 +90,7 @@ Buat file `.env` di root project:
 ```env
 DATABASE_URL="file:./dev.db"
 JWT_SECRET="your-super-secret-key-min-32-characters"
+PORT=8080
 ```
 
 ### 4. Setup Database
