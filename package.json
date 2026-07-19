@@ -1,0 +1,43 @@
+{
+  "name": "rhbot-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@nuxt/icon": "^1.3.0",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@prisma/client": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.0",
+    "nuxt": "^4.0.0",
+    "prisma": "^6.0.0",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "^1.26.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/qrcode": "^1.5.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  },
+  "overrides": {
+    "whatsapp-web.js": {
+      "puppeteer": "^23.0.0"
+    }
+  }
+}
